@@ -1,7 +1,5 @@
 package fit.challenge;
 
-import fit.challenge.ImcCalculator;
-
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -16,7 +14,7 @@ public class AppTest
     @Test
     public void shouldHaveCalculateAsStaticMethodOfImcCalculatorClass()
     {
-        String resultado = ImcCalculator.calculate(88, 1.77); //28.08
+        String resultado = ImcCalculator.calculate(88.00, 1.77); //28.08
         Assert.assertEquals(resultado, "Sobrepeso");
     }
 
